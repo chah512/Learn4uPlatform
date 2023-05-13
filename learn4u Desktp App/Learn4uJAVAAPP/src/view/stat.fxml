@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.statController">
+   <children>
+      <AnchorPane fx:id="slider" layoutY="72.0" prefHeight="706.0" prefWidth="239.0" style="-fx-background-color: #242B6E;">
+         <children>
+            <VBox layoutX="38.0" layoutY="184.0" prefHeight="632.0" prefWidth="229.0" AnchorPane.bottomAnchor="-53.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+               <children>
+                  <HBox onMouseClicked="#form" prefHeight="53.0" prefWidth="176.0" styleClass="sidebarItem" stylesheets="@../style/style.css">
+                     <children>
+                        <ImageView fx:id="fd" fitHeight="56.0" fitWidth="52.0" onMouseClicked="#fddaceuil" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/dash.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="dddd" onMouseClicked="#ddd" prefHeight="60.0" prefWidth="95.0" text="Accueil" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox onMouseClicked="#promo" prefHeight="53.0" prefWidth="176.0" styleClass="sidebarItem" stylesheets="@../style/style.css">
+                     <children>
+                        <ImageView fitHeight="56.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/panier.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="ff" onMouseClicked="#fff" prefHeight="53.0" prefWidth="136.0" text="Front" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox onMouseClicked="#abon" prefHeight="53.0" prefWidth="176.0" styleClass="sidebarItem" stylesheets="@../style/style.css">
+                     <children>
+                        <ImageView fitHeight="56.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/abo.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="53.0" prefWidth="122.0" text="Gestion  Cours" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox onMouseClicked="#stat" prefHeight="53.0" prefWidth="176.0" styleClass="sidebarItem" stylesheets="@../style/style.css">
+                     <children>
+                        <ImageView fitHeight="56.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iii.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="st" onMouseClicked="#stt" prefHeight="60.0" prefWidth="95.0" text="Statistique" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="ccours" mnemonicParsing="false" onAction="#cours" text="Cours" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="70.0" prefWidth="1366.0">
+         <children>
+            <AnchorPane prefHeight="70.0" prefWidth="1359.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane layoutX="181.0" layoutY="20.0" prefHeight="25.0" prefWidth="1311.0" style="-fx-background-color: #0A115A;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox layoutX="200.0" layoutY="-17.0" prefHeight="40.0" prefWidth="1087.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <HBox prefHeight="40.0" prefWidth="1132.0">
+                           <children>
+                              <HBox onMouseClicked="#form" prefHeight="45.0" prefWidth="283.0" styleClass="menuItem" stylesheets="@../style/style.css">
+                                 <children>
+                                    <ImageView fitHeight="45.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/dash1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="60.0" prefWidth="95.0" text="Accueil" textFill="#908a8a" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="45.0" prefWidth="283.0" styleClass="menuItem" stylesheets="@../style/style.css">
+                                 <children>
+                                    <ImageView fitHeight="45.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/panier2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="45.0" prefWidth="130.0" text="Gestion Promotion" textFill="#908a8a" />
+                                 </children>
+                              </HBox>
+                              <HBox onMouseClicked="#abon" prefHeight="45.0" prefWidth="283.0" styleClass="menuItem" stylesheets="@../style/style.css">
+                                 <children>
+                                    <ImageView fitHeight="45.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/abo2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="45.0" prefWidth="146.0" text="Gestion Evenement" textFill="#908a8a" />
+                                 </children>
+                              </HBox>
+                              <HBox onMouseClicked="#stat" prefHeight="45.0" prefWidth="305.0" styleClass="menuItem" stylesheets="@../style/style.css">
+                                 <children>
+                                    <ImageView fitHeight="45.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/stat2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="60.0" prefWidth="95.0" text="Statistique" textFill="#908a8a" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <Label fx:id="Menu" layoutX="25.0" layoutY="27.0" prefHeight="36.0" prefWidth="96.0" text="MENU">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/menu1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="MenuClose" layoutX="25.0" layoutY="27.0" prefHeight="36.0" prefWidth="96.0" text="MENU">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/menu1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="AnchorPane" layoutX="287.0" layoutY="139.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <PieChart fx:id="pieChart" layoutX="50.0" />
+            <Button fx:id="sum1" layoutX="24.0" layoutY="25.0" mnemonicParsing="false" onAction="#summ" text="somme" />
+            <Label fx:id="hh1" layoutX="52.0" layoutY="60.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="621.0" prefWidth="1136.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.UsersList.FXMLParentController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="621.0" prefWidth="212.0" spacing="1.0" style="-fx-background-color: ac50e1 ac50e1;">
+         <children>
+            <Text fill="#fffbfb" strokeType="OUTSIDE" strokeWidth="0.0" text="Learn4u">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnhome" alignment="TOP_LEFT" mnemonicParsing="false" opacity="0.26" prefHeight="37.0" prefWidth="247.0" text="Home">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="tfuserlists" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#redirectuserMnagement" opacity="0.26" prefHeight="37.0" prefWidth="267.0" text="Users Management">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" opacity="0.26" prefHeight="37.0" prefWidth="286.0" text="Cours Management">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="tfromationmanagement" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#redirectahmed" opacity="0.26" prefHeight="37.0" prefWidth="246.0" text="Formations Management">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#events" opacity="0.26" prefHeight="37.0" prefWidth="285.0" text="Events Management">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" opacity="0.26" prefHeight="37.0" prefWidth="313.0" text="Reclamations Management">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="rating" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#ratingredirect" opacity="0.26" prefHeight="37.0" prefWidth="345.0" text="Rating Management">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="category" alignment="TOP_LEFT" layoutX="10.0" layoutY="325.0" mnemonicParsing="false" onAction="#categoryredirect" opacity="0.26" prefHeight="37.0" prefWidth="345.0" text="Category Management">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="tfprofile" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#redirectProfile" opacity="0.26" prefHeight="37.0" prefWidth="355.0" text="Profile Settings">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#Logout" opacity="0.26" prefHeight="37.0" prefWidth="358.0" text="Logout">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="tfparent" layoutX="242.0" layoutY="20.0" prefHeight="465.0" prefWidth="888.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListeArticlesController">
+    <children>
+        <StackPane layoutX="45.0" layoutY="-14.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+            <children>
+                <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
+                <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" />
+                <Pane fx:id="pnlMenus" prefHeight="576.0" prefWidth="707.0" />
+                <Pane fx:id="pnlOverview" prefHeight="554.0" prefWidth="793.0" style="-fx-background-color: white;">
+                    <children>
+                        <TextField layoutX="590.0" layoutY="47.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+                        <Label layoutX="57.0" layoutY="25.0" text="     ARTICLES" textFill="#e7e5e5">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <ScrollPane fx:id="scrollPaneItems" layoutX="14.0" layoutY="120.0" prefHeight="420.0" prefWidth="746.0" stylesheets="@../style.css">
+                            <content>
+                                <HBox fx:id="boxItems" prefHeight="465.0" prefWidth="747.0" style="-fx-background-color: blue;" />
+                            </content>
+                        </ScrollPane>
+                        <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="749.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/icons8_Search_52px.png" />
+                            </image>
+                        </ImageView>
+                  <Button fx:id="home" layoutX="509.0" layoutY="88.0" mnemonicParsing="false" onAction="#backhome" text="Home" />
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+    </children>
+    <effect>
+        <DropShadow color="#1b1eeb" />
+    </effect>
+</AnchorPane>

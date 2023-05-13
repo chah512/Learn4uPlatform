@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ac50e1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.login.FXMLResetpwdController">
+   <children>
+      <TextField fx:id="tfemail" layoutX="107.0" layoutY="228.0" prefHeight="31.0" prefWidth="281.0" />
+      <Text fill="#fffbfb" layoutX="23.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reset password request">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Text>
+      <Text fill="#fffbfb" layoutX="20.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="request a password reset by writing your email in this form" />
+      <Text fill="#fffbfb" layoutX="23.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="if your email match an account we'll send you instructions" />
+      <Text fill="#fffbfb" layoutX="60.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" />
+      <Button fx:id="tfresetpwd" layoutX="176.0" layoutY="279.0" mnemonicParsing="false" onAction="#Resetpwd" style="-fx-background-color: eecafa; -fx-text-fill: white;" text="Reset password" />
+      <Button fx:id="tfback" layoutX="504.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancel" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: eecafa; -fx-text-fill: white;" text="Back" />
+   </children>
+</AnchorPane>

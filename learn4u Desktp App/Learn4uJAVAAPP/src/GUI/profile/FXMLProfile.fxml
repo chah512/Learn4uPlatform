@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="627.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.profile.FXMLProfileController">
+   <children>
+      <VBox layoutX="14.0" layoutY="164.0" prefHeight="220.0" prefWidth="141.0" spacing="10.0">
+         <children>
+            <Text fx:id="tfemail" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" wrappingWidth="140.6708984375">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Full name :">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Birthday :">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Role :">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="155.0" layoutY="37.0" prefHeight="347.0" prefWidth="223.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="118.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/favpng_user-profile-icon-design.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="tfusernameview" strokeType="OUTSIDE" strokeWidth="0.0" text="user1231">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="tfemailview" strokeType="OUTSIDE" strokeWidth="0.0" text="user1231@hotmail.fr">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="tffullnameview" strokeType="OUTSIDE" strokeWidth="0.0" text="example example">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="tfbirthdayview" strokeType="OUTSIDE" strokeWidth="0.0" text="2000/24/01">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="tfroleview" strokeType="OUTSIDE" strokeWidth="0.0" text="Administration">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="463.0" layoutY="26.0" prefHeight="496.0" prefWidth="303.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfusername" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First name :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tffirstname" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lastname :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tflastname" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="New Password :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="tfpassword" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Verify Password :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="tfverifypassword" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Birthday">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="tfbirthday" prefHeight="31.0" prefWidth="310.0" />
+         </children>
+      </VBox>
+      <Button fx:id="btnsave" layoutX="331.0" layoutY="384.0" mnemonicParsing="false" onAction="#Save" prefHeight="55.0" prefWidth="121.0" text="Save" />
+      <Button fx:id="tfuploadimage" layoutX="14.0" layoutY="125.0" mnemonicParsing="false" onAction="#Upload" prefHeight="31.0" prefWidth="117.0" text="Upload Image" />
+   </children>
+</AnchorPane>
